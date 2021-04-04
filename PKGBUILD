@@ -12,8 +12,8 @@ license=('GPL')
 conflicts=('onedrive' 'onedrive-abraunegg-git' 'onedrive-bin' 'onedrive-git' 'onedrive-fork-git')
 source=("https://github.com/abraunegg/onedrive/archive/v$pkgver.tar.gz")
 provides=("onedrive=$pkgver")
-depends=('curl' 'libnotify' 'sqlite' 'd-runtime')
-makedepends=('d-compiler')
+depends=('curl' 'libnotify' 'sqlite' 'liblphobos')
+makedepends=('ldc')
 
 build() {
 	cd "$_pkgname-$pkgver"
